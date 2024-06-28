@@ -16,7 +16,9 @@ export default {
         meubles: [
           { id: 1, nom: 'Meuble 1', imageSrc: '/photo1.jpg', description: 'Description du meuble 1.' },
           { id: 2, nom: 'Meuble 2', imageSrc: '/photo2.jpg', description: 'Description du meuble 2.' },
-          { id: 3, nom: 'Meuble 3', imageSrc: '/photo3.jpg', description: 'Une lampe de bureau élégante et pratique.' },
+          { id: 3, nom: 'Meuble 3', imageSrc: '/photo3.jpg', description: 'Description du meuble 3.' },
+          { id: 4, nom: 'Meuble 4', imageSrc: '/photo4.jpeg', description: 'Description du meuble 4.' },
+          { id: 5, nom: 'Meuble 5', imageSrc: '/photo5.jpeg', description: 'Description du meuble 5.' },
         ]
       }
     }
@@ -28,10 +30,12 @@ export default {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: space-around;
   }
   
   .meuble-card {
     width: 300px;
+    margin: 10px;
     border: 1px solid #ccc;
     border-radius: 8px;
     overflow: hidden;
