@@ -1,7 +1,7 @@
 <template>
   <div>
     <div id="app">
-      <AppMenu /> <!-- Utilisez le nouveau nom du composant ici -->
+      
     </div>
     <nav style="display:flex; justify-content: right; align-items: center;">
       <div @click="toggleMenu" class="burger-menu">
@@ -10,15 +10,27 @@
         <span></span>
       </div>
       <ul :class="{'navbar-list': true, 'is-active': menuActive}" style="display:flex;">
+<<<<<<< HEAD
         <li class="navbar-item"><router-link to="/">Accueil</router-link></li>
         <li class="navbar-item"><router-link to="/meubles">Catalogue de meubles</router-link></li>
         <li class="navbar-item"><router-link to="/RegistrationForm">Inscription</router-link></li>
         
         <li class="navbar-item"><router-link to="/MeContacter">Contacts</router-link></li>
+=======
+        <li class="navbar-item"><router-link to="/">Home</router-link></li>
+        <li class="navbar-item"><router-link to="/meubles">Catalogue de meubles</router-link></li>
+        <li class="navbar-item"><router-link to="/RegistrationForm">Registration Form</router-link></li>
+        
+        <li class="navbar-item"><router-link to="/contact">Contact</router-link></li>
+>>>>>>> ac82ff79e6af51055e0ae5324b7813d86f0e008d
       </ul>
     </nav>
+    
     <RouterView />
   </div>
+
+  
+
 </template>
 
 <script>
@@ -30,6 +42,7 @@ export default {
     }
   }
 }
+
 </script>
 
 <style>

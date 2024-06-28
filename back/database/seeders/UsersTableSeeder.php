@@ -2,25 +2,19 @@
 
 namespace Database\Seeders;
 
-use App\Models\User;
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class DatabaseSeeder extends Seeder
+class UsersTableSeeder extends Seeder
 {
     /**
-     * Seed the application's database.
+     * Run the database seeds.
      */
     public function run(): void
     {
-        // User::factory(10)->create();
-
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ],
-        [
-        'id'=>'1',
+         // Utilisateur 1
+        DB::table('users')->insert([
+            'id'=>'1',
             'name' => 'Johnson',
             'firstname' => 'Alice',
             'email' => 'alice.johnson@example.com',
@@ -29,9 +23,11 @@ class DatabaseSeeder extends Seeder
             'email_verified_at' => null,
             'created_at' => now(),
             'updated_at' => now(),
-            'remember_token' => Str::random(10)
-        ],
-        [
+            'remember_token' => Str::random(10),
+        ]);
+        
+        // Utilisateur 2
+        DB::table('users')->insert([
             'id'=>'2',
             'name' => 'Smith',
             'firstname' => 'Bob',
@@ -42,8 +38,10 @@ class DatabaseSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now(),
             'remember_token' => Str::random(10),
-        ],
-        [
+        ]);
+        
+        // Utilisateur 3
+        DB::table('users')->insert([
             'id'=>'3',
             'name' => 'Brown',
             'firstname' => 'Eva',
@@ -54,7 +52,10 @@ class DatabaseSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now(),
             'remember_token' => Str::random(10),
-        ],[
+        ]);
+        
+        // Utilisateur 4
+        DB::table('users')->insert([
             'id'=>'4',
             'name' => 'White',
             'firstname' => 'Michael',
@@ -65,8 +66,10 @@ class DatabaseSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now(),
             'remember_token' => Str::random(10),
-        ],
-        [
+        ]);
+        
+        // Utilisateur 5
+        DB::table('users')->insert([
             'id'=>'5',
             'name' => 'Green',
             'firstname' => 'Sophie',
@@ -77,8 +80,10 @@ class DatabaseSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now(),
             'remember_token' => Str::random(10),
-        ],
-        [
+        ]);
+
+        // Utilisateur 6
+         DB::table('users')->insert([
             'id'=>'6',
             'name' => 'Doe',
             'firstname' => 'John',
@@ -89,7 +94,10 @@ class DatabaseSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now(),
             'remember_token' => Str::random(10),
-        ],[
+        ]);
+
+          // Utilisateur 7
+        DB::table('users')->insert([
             'id'=>'7',
             'name' => 'Smith',
             'firstname' => 'Jane',
@@ -100,8 +108,9 @@ class DatabaseSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now(),
             'remember_token' => Str::random(10),
-        ],
-        [
+        ]);
+        // Utilisateur 8
+        DB::table('users')->insert([
     
         'id' => 8,
         'name' => 'Johnson',
@@ -113,8 +122,9 @@ class DatabaseSeeder extends Seeder
         'created_at' => now(),
         'updated_at' => now(),
         'remember_token' => Str::random(10),
-        ],
-        [
+        ]);
+    // Utilisateur 9
+        DB::table('users')->insert([
         'id' => 9,
         'name' => 'Smith',
         'firstname' => 'Bob',
@@ -125,8 +135,9 @@ class DatabaseSeeder extends Seeder
         'created_at' => now(),
         'updated_at' => now(),
         'remember_token' => Str::random(10),
-        ],
-        [
+        ]);
+    // Utilisateur 10
+        DB::table('users')->insert([
         'id' => 10,
         'name' => 'Brown',
         'firstname' => 'Eva',
@@ -137,8 +148,9 @@ class DatabaseSeeder extends Seeder
         'created_at' => now(),
         'updated_at' => now(),
         'remember_token' => Str::random(10),
-        ],
-        [
+        ]);
+    // Utilisateur 11
+        DB::table('users')->insert([
         'id' => 11,
         'name' => 'White',
         'firstname' => 'Michael',
@@ -149,8 +161,9 @@ class DatabaseSeeder extends Seeder
         'created_at' => now(),
         'updated_at' => now(),
         'remember_token' => Str::random(10),
-        ],
-        [
+        ]);
+    // Utilisateur 12
+        DB::table('users')->insert([
         'id' => 12,
         'name' => 'Green',
         'firstname' => 'Sophie',
@@ -161,7 +174,7 @@ class DatabaseSeeder extends Seeder
         'created_at' => now(),
         'updated_at' => now(),
         'remember_token' => Str::random(10),
-        ]
-        );
+        ]);
+        
     }
 }
