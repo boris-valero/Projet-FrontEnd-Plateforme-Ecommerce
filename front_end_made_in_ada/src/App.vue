@@ -11,8 +11,9 @@
       </div>
       <ul :class="{'navbar-list': true, 'is-active': menuActive}" style="display:flex;">
         <li class="navbar-item"><router-link to="/">Home</router-link></li>
+        <li class="navbar-item"><router-link to="/meubles">Catalogue de meubles</router-link></li>
         <li class="navbar-item"><router-link to="/RegistrationForm">Registration Form</router-link></li>
-        <li class="navbar-item"><router-link to="/services">Services</router-link></li>
+        
         <li class="navbar-item"><router-link to="/contact">Contact</router-link></li>
       </ul>
     </nav>
