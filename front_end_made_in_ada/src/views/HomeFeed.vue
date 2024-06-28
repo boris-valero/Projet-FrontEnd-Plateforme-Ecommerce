@@ -1,19 +1,10 @@
 <template>
     <h1>Bienvenue sur notre plateforme de vente de meuble</h1>
-    <img class="photo" src="/photo1.jpg" alt="Photo 1">
-    <img class="photo" src="/photo2.jpg" alt="Photo 2">
-    <img class="photo" src="/photo3.jpg" alt="Photo 3">
+    
 </template>
 
 <script>
-export default {
-  methods: {
-    toggleMenu() {
-      // Logique pour ouvrir/fermer le menu
-      console.log('Menu toggle');
-    }
-  }
-}
+
 </script>
 
 <style>
@@ -72,5 +63,37 @@ navbar-list {
 }
 .navbar-list li a:hover::before {
     width: 100%;
+}
+
+.meuble-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.meuble-card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.meuble-photo {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+h2, p {
+  padding: 0 15px;
+}
+
+h2 {
+  margin-top: 10px;
+}
+
+p {
+  margin-top: 5px;
+  color: #666;
 }
 </style>
