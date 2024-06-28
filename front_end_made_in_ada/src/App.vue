@@ -1,7 +1,7 @@
 <template>
   <div>
     <div id="app">
-      <AppMenu /> <!-- Utilisez le nouveau nom du composant ici -->
+      
     </div>
     <nav style="display:flex; justify-content: right; align-items: center;">
       <div @click="toggleMenu" class="burger-menu">
@@ -16,8 +16,12 @@
         <li class="navbar-item"><router-link to="/contact">Contact</router-link></li>
       </ul>
     </nav>
+    
     <RouterView />
   </div>
+
+  
+
 </template>
 
 <script>
@@ -29,6 +33,7 @@ export default {
     }
   }
 }
+
 </script>
 
 <style>
