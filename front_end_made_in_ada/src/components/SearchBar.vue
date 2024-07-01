@@ -1,4 +1,8 @@
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> ac82ff79e6af51055e0ae5324b7813d86f0e008d
 <template>
     <div class="search-bar">
       <input
@@ -35,4 +39,8 @@
     padding: 10px;
     box-sizing: border-box;
   }
+<<<<<<< HEAD
   </style>
+=======
+  </style>
+>>>>>>> ac82ff79e6af51055e0ae5324b7813d86f0e008d

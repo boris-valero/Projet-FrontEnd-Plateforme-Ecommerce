@@ -5,7 +5,7 @@
       <div class="container">
       <form @submit.prevent="submitForm">
         <div>
-          <label for="username">Username:</label>
+          <label for="username">Nom d'utilisateur:</label>
           <input type="text" id="username" v-model="form.username" required>
         </div>
         <br>
@@ -15,16 +15,16 @@
         </div>
         <br>
         <div>
-          <label for="password">Password:</label>
+          <label for="password">Mot de passe:</label>
           <input type="password" id="password" v-model="form.password" required>
         </div>
         <br>
         <div>
-          <label for="confirmPassword">Confirm Password:</label>
+          <label for="confirmPassword">Confirmer le mot de passe</label>
           <input type="password" id="confirmPassword" v-model="form.confirmPassword" required>
         </div>
         <br>
-        <button type="submit">Register</button>
+        <button type="submit">S'inscrire</button>
       </form>
       <div v-if="error" class="error">{{ error }}</div>
     </div>
