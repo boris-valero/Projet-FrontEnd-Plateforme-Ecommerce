@@ -3,11 +3,17 @@
     <div id="app">
       
     </div>
+
     <nav style="display:flex; justify-content: right; align-items: center;">
       <div @click="toggleMenu" class="burger-menu">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span>S'inscrire</span>
+        <span>Commandes</span>
+        <span>Mon compte</span>
+        <span></span>   
+
+       
+  
+
       </div>
       <ul :class="{'navbar-list': true, 'is-active': menuActive}" style="display:flex;">
         <li class="navbar-item"><router-link to="/">Home</router-link></li>
@@ -34,6 +40,9 @@ export default {
     }
   }
 }
+
+
+ 
 
 </script>
 
