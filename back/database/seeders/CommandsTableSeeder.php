@@ -4,6 +4,9 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
 
 class CommandsTableSeeder extends Seeder
 {
@@ -66,6 +69,7 @@ class CommandsTableSeeder extends Seeder
             'updated_at' => now(),
         ]);
 
+
                // Commande 7
         DB::table('commands')->insert([
             'command_date' => '2024-06-29',
@@ -77,7 +81,7 @@ class CommandsTableSeeder extends Seeder
              // Commande 8
         DB::table('commands')->insert([
         'command_date' => now(),
-        'user_id' => 8, // ID de l'utilisateur existant
+        'user_id' => 7, // ID de l'utilisateur existant
         'product_id' => 1, // ID du produit existant
         'created_at' => now(),
         'updated_at' => now(),
@@ -85,7 +89,7 @@ class CommandsTableSeeder extends Seeder
            // Commande 9
         DB::table('commands')->insert([
         'command_date' => now(),
-        'user_id' => 9,
+        'user_id' => 7,
         'product_id' => 2,
         'created_at' => now(),
         'updated_at' => now(),
@@ -93,7 +97,7 @@ class CommandsTableSeeder extends Seeder
            // Commande 10
         DB::table('commands')->insert([
         'command_date' => now(),
-        'user_id' => 10,
+        'user_id' => 6,
         'product_id' => 3,
         'created_at' => now(),
         'updated_at' => now(),
@@ -101,7 +105,7 @@ class CommandsTableSeeder extends Seeder
            // Commande 11
         DB::table('commands')->insert([
         'command_date' => now(),
-        'user_id' => 11,
+        'user_id' => 5,
         'product_id' => 4,
         'created_at' => now(),
         'updated_at' => now(),
@@ -109,7 +113,7 @@ class CommandsTableSeeder extends Seeder
           // Commande 12
         DB::table('commands')->insert([
         'command_date' => now(),
-        'user_id' => 12,
+        'user_id' => 3,
         'product_id' => 5,
         'created_at' => now(),
         'updated_at' => now(),

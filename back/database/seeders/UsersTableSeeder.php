@@ -4,6 +4,9 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
 
 class UsersTableSeeder extends Seeder
 {
@@ -109,72 +112,7 @@ class UsersTableSeeder extends Seeder
             'updated_at' => now(),
             'remember_token' => Str::random(10),
         ]);
-        // Utilisateur 8
-        DB::table('users')->insert([
-    
-        'id' => 8,
-        'name' => 'Johnson',
-        'firstname' => 'Alice',
-        'email' => 'alice.johnson@example.com',
-        'address' => '789 Oak St, New Town',
-        'password' => Hash::make('password123'),
-        'email_verified_at' => null,
-        'created_at' => now(),
-        'updated_at' => now(),
-        'remember_token' => Str::random(10),
-        ]);
-    // Utilisateur 9
-        DB::table('users')->insert([
-        'id' => 9,
-        'name' => 'Smith',
-        'firstname' => 'Bob',
-        'email' => 'bob.smith@example.com',
-        'address' => '456 Pine St, Another Town',
-        'password' => Hash::make('password456'),
-        'email_verified_at' => null,
-        'created_at' => now(),
-        'updated_at' => now(),
-        'remember_token' => Str::random(10),
-        ]);
-    // Utilisateur 10
-        DB::table('users')->insert([
-        'id' => 10,
-        'name' => 'Brown',
-        'firstname' => 'Eva',
-        'email' => 'eva.brown@example.com',
-        'address' => '321 Maple St, Smallville',
-        'password' => Hash::make('password789'),
-        'email_verified_at' => null,
-        'created_at' => now(),
-        'updated_at' => now(),
-        'remember_token' => Str::random(10),
-        ]);
-    // Utilisateur 11
-        DB::table('users')->insert([
-        'id' => 11,
-        'name' => 'White',
-        'firstname' => 'Michael',
-        'email' => 'michael.white@example.com',
-        'address' => '555 Cedar St, Little Town',
-        'password' => Hash::make('passwordabc'),
-        'email_verified_at' => null,
-        'created_at' => now(),
-        'updated_at' => now(),
-        'remember_token' => Str::random(10),
-        ]);
-    // Utilisateur 12
-        DB::table('users')->insert([
-        'id' => 12,
-        'name' => 'Green',
-        'firstname' => 'Sophie',
-        'email' => 'sophie.green@example.com',
-        'address' => '888 Birch St, Tiny Town',
-        'password' => Hash::make('passwordxyz'),
-        'email_verified_at' => null,
-        'created_at' => now(),
-        'updated_at' => now(),
-        'remember_token' => Str::random(10),
-        ]);
+    //    ;
         
     }
 }
