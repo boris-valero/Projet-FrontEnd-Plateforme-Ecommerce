@@ -1,21 +1,4 @@
 <template>
-<<<<<<< HEAD
-  <h1> Bienvenue sur notre plateforme de vente de meuble</h1>
-  <img class="photo" src="/photo1.jpg" alt="Photo 1">
-  <img class="photo" src="/photo2.jpg" alt="Photo 2">
-  <img class="photo" src="/photo3.jpg" alt="Photo 3">
-</template>
-
-<script>
-export default {
-methods: {
-  toggleMenu() {
-    // Logique pour ouvrir/fermer le menu
-    console.log('Menu toggle');
-  }
-}
-}
-=======
 <div class="search-bar mx-auto">
         <form class="form-inline w-auto" action="#" method="GET">
           <input class="form-control mr-xl-5 search-input" type="search" placeholder="Rechercher un produit" aria-label="Search">
@@ -42,7 +25,6 @@ methods: {
 
 
   
->>>>>>> ac82ff79e6af51055e0ae5324b7813d86f0e008d
 </script>
 
 <style>
@@ -87,7 +69,6 @@ methods: {
 }
 h1 {
   font-family: 'Leckerli One', cursive;
-<<<<<<< HEAD
   font-size: 65px;
   text-align: center;
 }
@@ -95,14 +76,6 @@ h1 {
 .photo {
   width: 575px; 
   margin: 10px;
-=======
-  font-size: 65px
-}
-
-.photo {
-    width: 370px; 
-    margin: 23px;
->>>>>>> ac82ff79e6af51055e0ae5324b7813d86f0e008d
 }
 
 navbar-list {
